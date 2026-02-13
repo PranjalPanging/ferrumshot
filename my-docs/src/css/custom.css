@@ -1,0 +1,52 @@
+/**
+ * FERRUMSHOT TECHNICAL DESIGN SYSTEM
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;700&display=swap');
+
+:root {
+  /* THE "IRON" PALETTE - Safety Orange accents */
+  --ifm-color-primary: #ff6600; 
+  --ifm-color-primary-dark: #e65c00;
+  --ifm-color-primary-darker: #cc5200;
+  --ifm-color-primary-darkest: #993d00;
+  --ifm-color-primary-light: #ff8533;
+  --ifm-color-primary-lighter: #ff944d;
+  --ifm-color-primary-lightest: #ffad77;
+  
+  /* TEXT & UI */
+  --ifm-font-family-base: 'Inter', sans-serif;
+  --ifm-font-family-monospace: 'JetBrains Mono', monospace;
+  --ifm-code-font-size: 90%;
+  --ifm-background-color: #ffffff;
+}
+
+[data-theme='dark'] {
+  /* THE "STEALTH" MODE - High contrast for dark sets */
+  --ifm-color-primary: #ff6600;
+  --ifm-background-color: #050505;
+  --ifm-navbar-background-color: #0a0a0a;
+  --ifm-card-background-color: #111111;
+  --ifm-menu-color-active: var(--ifm-color-primary);
+  
+  /* TECHNICAL GLOW EFFECT FOR CODE BLOCKS */
+  --docusaurus-highlighted-code-line-bg: rgba(255, 102, 0, 0.1);
+  --ifm-toc-border-color: rgba(255, 255, 255, 0.05);
+}
+
+/* CUSTOM HUD STYLES */
+.navbar {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+}
+
+code {
+  border: 1px solid rgba(255, 102, 0, 0.2);
+  background-color: rgba(255, 102, 0, 0.05);
+  color: var(--ifm-color-primary);
+}
+
+.footer {
+  --ifm-footer-background-color: #000000;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
